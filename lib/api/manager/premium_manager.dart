@@ -54,7 +54,7 @@ class PremiumManager {
 
     final userNodeId = jsonDecode(userRes.body)['node_id'].toString();
 
-    final fileRes = await httpGet(Uri.parse('https://raw.githubusercontent.com/ViscousPot/sponsors-gitsync/refs/heads/main/sponsors.txt'));
+    final fileRes = await httpGet(Uri.parse('https://mxlite.pages.dev/sponsors.txt'));
 
     if (userNodeId.isEmpty || fileRes.statusCode != 200) {
       Logger.log("GitHub sponsor check could not read the sponsor list (${fileRes.statusCode})");
