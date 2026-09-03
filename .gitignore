@@ -42,7 +42,7 @@ windows/
 web/
 
 # Secret and environment files
-secrets.dart
+#secrets.dart
 .maestro/src/env.rs
 .maestro/target/
 
